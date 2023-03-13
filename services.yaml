@@ -127,7 +127,6 @@ Resources:
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html
       ImageId: !Ref WebServerImageId
-      KeyName: udacity
       IamInstanceProfile: !Ref ProfileWithRolesForApp
       SecurityGroups:
       - Fn::ImportValue: !Sub "${Project}-AppSecurityGroupID"

@@ -21,7 +21,7 @@ Parameters:
   WebServerImageId:
     Description: Web serve image id
     Type: String
-    Default: ami-00a54827eb7ffcd3c # Ubuntu Server 18.04 LTS
+    Default: ami-0263e4deb427da90e # Ubuntu Server 18.04 LTS
 
   WebServerVolumeSize:
     Description: Web server disk volume size
@@ -130,8 +130,7 @@ Resources:
       KeyName: udacity
       IamInstanceProfile: !Ref ProfileWithRolesForApp
       SecurityGroups:
-      - Fn::ImportValue:
-          !Sub "${Project}-AppSecurityGroupID"
+      - Fn::ImportValue: !Sub "${Project}-AppSecurityGroupID"
       InstanceType: !Ref WebServerInstanceType
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"

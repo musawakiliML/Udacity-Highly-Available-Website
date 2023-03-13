@@ -10,7 +10,7 @@ Create a Launch Configuration in order to deploy four servers, two located in ea
 your private subnets. The launch configuration will be used by an auto-scaling group. You'll need two vCPUs and at least 4GB of RAM. The Operating System to be used is Ubuntu 18. So, choose an Instance size and Machine Image (AMI) that best fits this spec. Be sure to allocate at least 10GB of disk space so that you don't run into issues.
 
 ### Architecture
-![Architecture](./infrastructure-diagram.png)
+![Architecture](./Infrastructure-diagram.png)
 
 ### Files included:
 

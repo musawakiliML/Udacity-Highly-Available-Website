@@ -123,7 +123,7 @@ Resources:
           sudo apt-get update -y
           sudo apt-get install unzip awscli -y
           sudo apt-get install apache2 -y
-          systemctl start apache2.service
+          sudo systemctl start apache2.service
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html
       ImageId: !Ref WebServerImageId
